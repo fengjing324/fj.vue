@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+      /* .ff{
+          width: 200px;
+          height: 200px;
+          line-height: 200px;
+          text-align: center;
+          background: -webkit-linear-gradient(left top,red,green);
+          border-radius: 50%;
+          box-shadow: 3px 3px 3px 3px #000;
+          box-sizing: content-box; */
+          /*
+          标准盒子模型 box-sizing:content-box;
+          IE盒子模型   box-sizing:border-box;
+          */
+    
+</style>
+<body>
+    <!-- <div class="ff">dkcoiavioa</div> -->
+    <button>第一</button>
+    <button>第二</button>
+    <button>第三</button>
+    <button>第四</button>
+</body>
+</html>
+<script>
+    var oBtns=document.getElementsByTagName('button');
+    for(var i=0;i<oBtns.length;i++)
+    {
+        oBtns[i].onclick=function()
+        {
+            alert(this.innerHTML);
+        }
+    }
+    // var str='u';
+    // console.log(Number(str));
+    // console.log(parseInt(str));
+
+    //事件的循环绑定
+    
+    // function sum(a,b,c)
+    // {
+    //     var total=0;
+    //     for(var i=0;i<arguments.length;i++ )
+    //     {
+    //         console.log(arguments[i]);
+    //         total += arguments[i];
+    //     }
+    //     return total;
+        
+    // }
+    // var q=sum(1,2,3,4,5);
+    // console.log(q);
+    //arguments  实际参数集合
+    //ParseInt() 只要第一个字符是非数字，那么结果就是NaN
+    //Number()  空字符串 或者 字符串只有空格 那么 Number()得到结果为0
+    //布尔数据类型：5个false 其他全部是true
+    //0 NaN '' null undefined
+    //对于&&符来说 前边成立给后边，前边不成立给前边
+    //对于||符来说 前边成立给前边，前边不成立给后边
+    // var a=1 || 2;
+    // var b=1 && 2;
+    // console.log(a,b);
+
+    // console.log('0'==0);     //转成数字
+    // console.log([]==false);  //先把引用数据类型转成字符串，再转数字
+    // console.log(![]==false);
+    //  == 相对比较  会把两边数据类型转化成同一种再去比较
+    //  === 绝对比较 先看两边是不是同一个数据类型，若不是，直接false;
+    //若是，再去比较值是否相对
+    //'0' != 1    '0' !== 1
+    //  !  取反
+    //  !!效果等同于boolean() 
+
+    //基本数据类型(值类型):String number boolean null undefined
+    //引用数据类型:[] {} function Data Math 正则...
+    //基本数据类型操作的都是一个值，引用..是一个地址
+    // var name='冯菁';
+    // var age=19;
+    // var str=`我的名字是${name}  我的年龄是${age}`;
+    // console.log(str);
+    // var str2='124\'sdf';
+    //若想用单引号包含单引号，需要用\把字符串中的单引号转义
+    //number类型
+    //Number();
+    //parseInt();
+    //parseFloat();
+    // isNaN(1/'a') 判断参数是否是NaN，若是则返回true,否则返回false
+    // null == undefined  true
+    // null === undefined  false
+    //typeof 1  查看数据类型 typeof typeof 1-----String
+    //boolean
+    //Boolean;!;!!
+
+    //对象获取 属性值的两种方式 一种是打点；
+    //一种是[]，这种一般适用于属性值是通过变量获取的情况
+
+
+</script>

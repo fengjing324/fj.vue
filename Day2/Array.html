@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+    var ary=[1,2,3,4];
+    var n=ary.push(5,3,4,5,2);//push 给数组的末尾添加项;
+    var item=ary.pop();//pop 删除数组的最后一项
+    var n=ary.unshift(100);//unshift 给数组首项增加项
+             ary.shift();//shift 删除数组首项
+    console.log(n,ary);//n  改变后的数组的长度
+
+    var ary=[5,3,4,2];
+    ary.sort(function(a,b){
+        return a-b;//数组排序 a-b 升序    b-a  降序
+    })//sort 的返回结果是排好序之后的数组
+
+    function fn()
+    {
+        return;//两个作用 1.打断函数执行 2.返回结果
+               //不写return,默认返回undefined
+    }
+    var f=fn();
+
+    //reverse ary.reverse数组的反转;返回结果跟原数组是一个地址
+    //forEach 
+    // ary=[10,20,30,4d0];
+    // art.forEach(function(item,index){
+        //forEach 用来循环数组
+        //item 是循环的数组的每一项
+        //index 是循环的每一项的索引
+    // })
+    var ary2=ary.filter(function(item,index){
+        //filter 的返回值是符合条件后的项组成的新数组
+        return true;
+    });
+</script>
